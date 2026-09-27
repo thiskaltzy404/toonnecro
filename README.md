@@ -1,1 +1,3 @@
-NecroToon V5 — self-contained responsive frontend. Upload the contents of this folder directly to Vercel. No external JS/CSS/image asset is required for the logo or core UI.
+# NecroToon V6
+
+Mobile/desktop visual polish update: precision SVG icon system, aligned hamburger, uploaded NT mark in profile avatar, and mobile search behavior.
