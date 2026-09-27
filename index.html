@@ -10,7 +10,7 @@
 <body>
 <div id="progress"></div><div class="ambient a1"></div><div class="ambient a2"></div>
 <aside class="sidebar" id="sidebar">
-  <div class="brand"><img src="assets/necrooton-logo-transparent.png" alt="NecroToon"><span>NECROTOON</span></div>
+  <div class="brand"><img src="assets/necrooton-logo-cropped.png" alt="NecroToon"><span>NECROTOON</span></div>
   <nav>
     <button class="active" data-route="home">⌂<span>Beranda</span></button>
     <button data-route="library">▣<span>Komik</span></button>
@@ -25,24 +25,24 @@
 </aside>
 <header class="topbar">
   <button class="iconBtn menu" id="menuBtn">☰</button>
-  <a class="mobileBrand" data-route="home"><img src="assets/necrooton-logo-transparent.png" alt="NecroToon"></a>
+  <a class="mobileBrand" data-route="home"><img src="assets/necrooton-logo-cropped.png" alt="NecroToon"></a>
   <div class="searchWrap"><span>⌕</span><input id="search" placeholder="Cari judul komik, author, atau genre…"><kbd>Ctrl K</kbd></div>
   <div class="topActions"><button class="iconBtn" data-action="notifications">♧<i>3</i></button><button class="iconBtn" data-action="theme">☾</button><button class="avatar" data-action="profile">N</button></div>
 </header>
 <main id="app">
 <div class="searchResults" id="searchResults"></div>
 <section class="hero" id="hero">
- <div class="heroText"><div class="eyebrow">✦ THE NEXT GENERATION READER</div><img class="heroLogo" src="assets/necrooton-logo-transparent.png" alt="NECROTOON"><h1>BACA KOMIK, MANHWA, &amp; NOVEL <span>DALAM SATU TEMPAT</span></h1><p>Jelajahi ribuan judul dengan tampilan sinematik, pembaca super nyaman, sinkronisasi progress, dan pengalaman membaca yang terasa hidup.</p><div class="heroBtns"><button class="primary" data-action="continue">Mulai Membaca →</button><button class="ghost" data-route="library">Lihat Semua ↗</button></div><div class="heroMeta"><span>⚡ Update setiap hari</span><span>◈ 4K Reader</span><span>♧ Cloud Sync</span></div></div>
+ <div class="heroText"><div class="eyebrow">✦ THE NEXT GENERATION READER</div><img class="heroLogo" src="assets/necrooton-logo-cropped.png" alt="NECROTOON"><h1>BACA KOMIK, MANHWA, &amp; NOVEL <span>DALAM SATU TEMPAT</span></h1><p>Jelajahi ribuan judul dengan tampilan sinematik, pembaca super nyaman, sinkronisasi progress, dan pengalaman membaca yang terasa hidup.</p><div class="heroBtns"><button class="primary" data-action="continue">Mulai Membaca →</button><button class="ghost" data-route="library">Lihat Semua ↗</button></div><div class="heroMeta"><span>⚡ Update setiap hari</span><span>◈ 4K Reader</span><span>♧ Cloud Sync</span></div></div>
  <div class="heroVisual"><div class="orbit o1"></div><div class="orbit o2"></div><div class="heroCharacter">N</div><div class="heroRank"><small>KOMIK POPULER</small><b>Solo Leveling</b><span>Chapter 210 · ★ 9.8</span><button data-action="openComic" data-id="solo">Baca →</button></div></div>
 </section>
-<section class="benefits"><div>▣<b>Ribuan Judul</b><small>Komik, Manhwa, Novel</small></div><div>◌<b>Update Cepat</b><small>Realtime & komunitas</small></div><div>▤<b>Kualitas HD</b><small>Jernih, minim kompresi</small></div><div>◉<b>Multi-Platform</b><small>HP sampai desktop</small></div></section>
+<section class="continueBar" id="continueBar" hidden></section><section class="benefits"><div>▣<b>Ribuan Judul</b><small>Komik, Manhwa, Novel</small></div><div>◌<b>Update Cepat</b><small>Realtime & komunitas</small></div><div>▤<b>Kualitas HD</b><small>Jernih, minim kompresi</small></div><div>◉<b>Multi-Platform</b><small>HP sampai desktop</small></div></section>
 <div class="sectionHead"><div><small>TRENDING NOW</small><h2>🔥 Komik Populer</h2></div><button data-route="library">Lihat Semua →</button></div><section class="cards" id="popularCards"></section>
 <div class="sectionHead"><div><small>FRESH RELEASE</small><h2>Manhwa Terbaru</h2></div><button data-route="manhwa">Lihat Semua →</button></div><section class="cards" id="manhwaCards"></section>
 <div class="sectionHead"><div><small>WORDS &amp; WORLDS</small><h2>Novel Terpopuler</h2></div><button data-route="novel">Lihat Semua →</button></div><section class="cards" id="novelCards"></section>
 <section class="dashboard"><div class="panel topPanel"><div class="panelHead"><div><small>LIVE RANKING</small><h2>Top 10</h2></div><button data-route="library">Lihat Semua →</button></div><div class="tabs"><button class="active" data-tab="komik">Komik</button><button data-tab="manhwa">Manhwa</button><button data-tab="novel">Novel</button></div><div id="top10"></div></div><div class="rightPanels"><div class="panel"><div class="panelHead"><div><small>LIVE</small><h2>Notifikasi</h2></div><button data-action="notifications">Semua →</button></div><div class="noticeList" id="noticeList"></div></div><div class="panel readerPanel"><div><small>READER</small><h2>Mode Baca</h2></div><div class="readerModes"><button class="active" data-reader="scroll">▤<small>Scroll</small></button><button data-reader="tap">◉<small>Tap</small></button><button data-reader="page">▣<small>Page</small></button><button data-reader="auto">◌<small>Auto</small></button></div><div class="themeChoices"><button class="active" data-reader-theme="dark">● Dark</button><button data-reader-theme="light">○ Light</button><button data-reader-theme="blue">◉ Blue</button></div></div></div></section>
 <section class="community"><div class="city">◢◣◢◣◢◣</div><div><small>NECROTOON COMMUNITY</small><h2>Jangan Lupa</h2><p>Bergabung dengan komunitas kami untuk diskusi, rekomendasi, event, dan teman baru.</p><button class="primary" data-action="discord">Gabung Sekarang →</button></div><div class="discord">◉ JOIN OUR<br>DISCORD<small>100K+ anggota</small></div></section>
 </main>
-<footer><div class="brand"><img src="assets/necrooton-logo-transparent.png" alt="NecroToon"><span>NECROTOON</span></div><span>© 2026 NecroToon. All rights reserved.</span><div>Tentang Kami · Kebijakan Privasi · Syarat &amp; Ketentuan · Kontak</div><strong>Read More,<br><i>Feel More.</i></strong></footer>
+<footer><div class="brand"><img src="assets/necrooton-logo-cropped.png" alt="NecroToon"><span>NECROTOON</span></div><span>© 2026 NecroToon. All rights reserved.</span><div>Tentang Kami · Kebijakan Privasi · Syarat &amp; Ketentuan · Kontak</div><strong>Read More,<br><i>Feel More.</i></strong></footer>
 <nav class="mobileNav"><button class="active" data-route="home">⌂<small>Home</small></button><button data-route="library">▣<small>Komik</small></button><button id="mobileSearch">⌕<small>Cari</small></button><button data-route="favorites">♡<small>Favorit</small></button><button data-action="profile">◉<small>Akun</small></button></nav>
 <div class="drawerBackdrop" id="backdrop"></div><div class="modal" id="modal"><div class="modalBox" id="modalBox"><button class="close" id="closeModal">×</button><div id="modalBody"></div></div></div><div class="toast" id="toast"></div>
 <script src="app.js"></script>
